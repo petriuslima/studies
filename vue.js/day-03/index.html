@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Day 01</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p v-if="nikolasCage">AAAIIIIINNN QUE GATOOOO!!!</p>
+    <p v-else>É OS GURI</p>
+
+    <ul>
+      <li v-for="lexter in lexters">{{ lexter.name }}</li>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: {
+        nikolasCage: true,
+        lexters: [
+          { name: 'Lexter Twif' },
+          { name: 'Lexter Tif' },
+          { name: 'Lexter Schuifts' },
+          { name: 'Lexter Tchifit' }
+        ]
+      }
+    })
+  </script>
+</body>
+</html>
